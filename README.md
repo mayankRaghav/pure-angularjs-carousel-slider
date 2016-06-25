@@ -1,0 +1,1 @@
+# pure-angularjs-carousel-slider

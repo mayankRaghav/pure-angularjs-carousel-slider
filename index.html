@@ -1,20 +1,20 @@
 <!doctype html>
 <html ng-app="sliderApp">
   <head>
-	  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
     <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.1.js"></script>
     <script src="controller.js"></script>
     <link href="style.css" rel="stylesheet">
   </head>
 <body>
 <div ng-controller="sliderController">
-  <div style="height: 405px">
-    <carousel interval="myInterval">
+  <div style="height: 300px">
+    <carousel interval="slideSpeedInMS">
       <slide ng-repeat="slide in slides track by $index">
-        <div style="width:500px;height:150px;"> 
-	      <img src="{{slides[$index]}}" alt="Image 1" height="150" width="150">
-        <img src="{{slides[$index+1]}}" alt="Image 2" height="150" width="150">
-        <img src="{{slides[$index+2]}}" alt="Image 3" height="150" width="150">
+        <div style="width:950px;height:300px;margin:auto;"> 
+	<img src="{{slides[$index]}}" alt="Image 1" height="300" width="300">
+        <img src="{{slides[$index+1]}}" alt="Image 2" height="300" width="300">
+        <img src="{{slides[$index+2]}}" alt="Image 3" height="300" width="300">
         </div>
       </slide>
     </carousel>
